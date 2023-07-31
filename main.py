@@ -52,3 +52,5 @@ if __name__ == "__main__":
         wget.download("https://raw.githubusercontent.com/" + GITHUB_USERNAME + "/" + GITHUB_REPOSITORY + "/master/game.zip", "game.zip")
         with zipfile.ZipFile("game.zip", 'r') as zip_ref:
             zip_ref.extractall("Game")
+
+    subprocess.run(["Game/platformer.exe"])
